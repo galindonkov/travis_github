@@ -1,6 +1,0 @@
-#createtravis
-language: generic
-dist: xenial
-sudo: required
-script:
-test.sh
