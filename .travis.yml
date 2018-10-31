@@ -10,4 +10,4 @@ deploy:
   file: hello.sh
   on:
     repo: galindonkov/travis_github
-    branch: travis_branch
+    tags: true
