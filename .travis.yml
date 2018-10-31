@@ -3,3 +3,11 @@ dist: xenial
 sudo: required
 script:
 - bash test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: jvYuIEKCR6UDVTM8as/FvzYeNrU+zONMe4+5aJ/bu+wb14ShDNhmM7EmLPAVrOkKEXZ6ksWIxSXZYTVCiUuNXiTit8ozkPAndtRUPS3BnZH9mPOZR8UvmiMJmJNVW6MZbIhGbs8rIhfqsERTX4Vhxcjq91DcYEPxxr023uDox70x8Zc1/aCvMSrUdhkfcerWf4ra5WG9KrmReb1pAGJL2k8v8CraUrEJLpaAz+S88L5DlbO+phvGA+MkEy0qGPmqwdb5Ur7H3LqMQ7EHtwKyT4ADFjC7bApzL7YZ5fkb5Ofnh+SAzoI7PLgQKo8iuVoBt2pTX0UOfsqlfy5xVlP3a4CzRTdbnWJ+/3kTsnz3GZXWfwtAcZLxZMBc8ssylU8bgqo8xERXTA4oZUnBczpQpISwuep1/b3ZtUr9kp0YhkpGQVMtSARyfYNLMDlb6Qi3oRJPwGm8TGJclvrLXirJISNs9kLkYZ6t39YvCPByf2kzNV4YrvxCncxGQzrVHm0VHgLQLzFayIlMsAVDvIcami51cfG4lFfcC4Qx972mNDDoZ4eBNTXbx6rzDCIJ7A/o42y3ia05gxceJgCwE9Y0Tzoya5ym7VLvhl24kPFQRWzeQAmkcMM+gG9nDrV+5n/pL9YToV6YbZ6L30XHzqlTr/jBKwR9HEoVB868aNqj5i4=
+  file: hello.sh
+  on:
+    repo: galindonkov/travis_github
+    branch: travis_branch
